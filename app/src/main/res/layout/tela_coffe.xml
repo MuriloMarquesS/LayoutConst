@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_coffe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/coffe"
+        android:gravity="center"
+        android:padding="50dp"
+        android:text="Cappuccino"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_time"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_access_time"
+        app:layout_constraintBottom_toTopOf="@id/tv_min"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_coffe" />
+
+    <TextView
+        android:id="@+id/tv_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:text="15 minutos"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_time" />
+
+    <ImageView
+        android:id="@+id/img_love"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="100dp"
+        android:src="@drawable/ic_love"
+        app:layout_constraintBottom_toTopOf="@id/tv_like"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_coffe" />
+
+    <TextView
+        android:id="@+id/tv_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="91dp"
+        android:text="15 minutos"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_love" />
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="380dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/coffe"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_like" />
+
+    <TextView
+        android:id="@+id/frase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Uma simples e perfeita extraída dose de espresso misturado com leite fresco e chocolate fazem esta bebida deliciosa."
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_1" />
+
+    <TextView
+        android:id="@+id/ing."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Ingredientes"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frase"/>
+
+    <ImageView
+        android:id="@+id/keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ing."
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_keyboard"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/texting."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 dose de espresso"
+        app:layout_constraintTop_toBottomOf="@id/ing."
+        app:layout_constraintLeft_toRightOf="@id/keyboard"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/keyboard2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/keyboard"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_keyboard"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/texting1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100ml leite"
+        app:layout_constraintTop_toBottomOf="@id/texting."
+        app:layout_constraintLeft_toRightOf="@id/keyboard2"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/keyboard3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/keyboard2"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_keyboard"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 dose de espresso"
+        app:layout_constraintTop_toBottomOf="@id/texting1"
+        app:layout_constraintLeft_toRightOf="@id/keyboard3"
+        android:layout_marginTop="21dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
